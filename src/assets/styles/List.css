@@ -1,0 +1,61 @@
+/* Main.css */
+
+/* הגדרת הכללים הכלליים */
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 10vh; /* גובה המסך */
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* מוודא שהרשימה לא תצא מעבר לגבולות ה-Header ו-Footer */
+.filter-container {
+  position: fixed; /* מיקום מוחלט יחסית למסך */
+  top: 170px; /* גובה ה-Header, לשים את הרשימה מיד אחרי ה-Header */
+  right: 0;
+  width: 250px; /* רוחב הרשימה */
+  bottom: 100px; /* למנוע מהרשימה לצאת מעבר ל-Footer */
+  background-color: #f4f4f4; /* צבע רקע */
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 2px solid #ddd;
+  overflow-y: auto; /* הוספת גלילה אם יש יותר פריטים ממה שמכיל */
+}
+
+/* עיצוב כותרת ה-Filter */
+.filter-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* עיצוב פריטי הרשימה */
+.filter-container ul {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.filter-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* עיצוב התווית ליד תיבת הסימון */
+.filter-container label {
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* עיצוב תיבת הסימון */
+.filter-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

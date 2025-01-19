@@ -1,0 +1,42 @@
+/* Search.css */
+
+/* ממקם את תיבת החיפוש בחלק העליון של הדף */
+.search-container {
+  position: fixed; /* תיבת החיפוש תישאר במקום קבוע */
+  top: 200px; /* מיקום תיבת החיפוש 20 פיקסלים מהחלק העליון של הדף */
+  left: 50%;
+  transform: translateX(-50%); /* ממקם את התיבה באמצע */
+  width: 80%; /* גודל אחוזי של התיבה */
+  max-width: 600px; /* מגביל את הרוחב של תיבת החיפוש */
+  z-index: 1000; /* מוודא שהיא נמצאת מעל אלמנטים אחרים */
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1; /* נותן לתיבת הקלט למלא את כל המקום הפנוי */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
