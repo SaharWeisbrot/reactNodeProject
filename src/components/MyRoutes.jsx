@@ -4,23 +4,23 @@ import MainPage from "./MainPage";
 import About from "./About";
 import Header from "./Header";
 import Footer from "./Footer";
-import List from "./List";
 import Contact from "./Contact";
 
 import ArticlePage from "./ArticlePage";
+import EditPost from "./EditPost";
 
 function MyRoutes() {
   return (
     <>
       <Header />
 
-      <List />
-
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/page/:id" element={<ArticlePage />} />
+        <Route path="/editPost" element={<EditPost />} />{" "}
+        {/* Add the new route */}
         {/* <Route path='/post/:id' element={<SinglePost />} />
 						<Route path='/' element={<MainPage />} />
 						<Route path='/newpost' element={<NewPost />} />
