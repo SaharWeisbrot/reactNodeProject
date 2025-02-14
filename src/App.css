@@ -18,7 +18,7 @@ main {
 
 header,
 footer {
-  padding: 30px;
+  padding: 20px;
 }
 /* #region general */
 *,
@@ -236,7 +236,7 @@ footer {
   gap: 2rem;
 }
 .logo img {
-  height: 20rem;
+  height: 15rem;
 }
 .logo span {
   color: black;

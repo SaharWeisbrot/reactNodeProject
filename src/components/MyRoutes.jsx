@@ -5,9 +5,10 @@ import About from "./About";
 import Header from "./Header";
 import Footer from "./Footer";
 import Contact from "./Contact";
-
 import ArticlePage from "./ArticlePage";
-import EditPost from "./EditPost";
+import AddCategory from "./AddCategory";
+import EditCategory from "./EditCategory";
+import Login from "./Login";
 
 function MyRoutes() {
   return (
@@ -15,11 +16,13 @@ function MyRoutes() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/mainPage" element={<MainPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/page/:id" element={<ArticlePage />} />
-        <Route path="/editPost" element={<EditPost />} />{" "}
+        <Route path="/addCategory" element={<AddCategory />} />{" "}
+        <Route path="/editCategory/:id" element={<EditCategory />} />
         {/* Add the new route */}
         {/* <Route path='/post/:id' element={<SinglePost />} />
 						<Route path='/' element={<MainPage />} />
