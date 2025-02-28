@@ -1,0 +1,78 @@
+/* Header styles */
+header {
+  background-image: url("/src/assets/img/map.png");
+  padding: 0.8rem 0; /* הקטנת הריווח */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 10rem; /* הקטנת גודל הלוגו */
+}
+
+.logo span {
+  color: black;
+  font-size: 2rem; /* הקטנת גודל הטקסט של הלוגו */
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem; /* הקטנת גודל הטקסט בתפריט */
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.menu-item.active {
+  font-weight: bold;
+  color: #b4587f;
+}
+
+/* Responsive design for header */
+@media (max-width: 768px) {
+  .logo img {
+    height: 6rem; /* הקטנת הלוגו בנייד */
+  }
+
+  .logo span {
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .menu-item {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

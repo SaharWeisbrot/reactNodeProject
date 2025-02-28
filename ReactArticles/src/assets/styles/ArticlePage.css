@@ -1,0 +1,38 @@
+/* עיצוב כללי */
+.article-page {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+main {
+  flex-grow: 1;
+  flex: 1;
+  background-color: brown;
+}
+
+/* עיצוב ברירת מחדל */
+.article-default {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* עיצוב ייחודי לעמוד "ראשונות" */
+.article-firsts {
+  background-color: #ffebcc;
+  color: #5a3d2b;
+}
+
+.article-firsts h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.article-firsts p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.article-firsts .article-image {
+  border: 3px solid #e09e45;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
